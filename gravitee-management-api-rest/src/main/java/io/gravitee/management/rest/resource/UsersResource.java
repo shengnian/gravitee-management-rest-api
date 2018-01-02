@@ -168,8 +168,7 @@ public class UsersResource extends AbstractResource {
                 .build();
     }
 
-    public static final Comparator<String> CASE_INSENSITIVE_ORDER
-            = new CaseInsensitiveComparator();
+    private static final Comparator<String> CASE_INSENSITIVE_ORDER = new CaseInsensitiveComparator();
 
     private static class CaseInsensitiveComparator
             implements Comparator<String>, java.io.Serializable {
